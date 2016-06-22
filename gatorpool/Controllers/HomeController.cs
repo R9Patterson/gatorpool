@@ -26,5 +26,10 @@ namespace gatorpool.Controllers
 
             return View();
         }
+
+        public ActionResult Theme()
+        {
+            return View();
+        }
     }
 }

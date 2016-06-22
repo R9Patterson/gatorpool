@@ -7,6 +7,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gatorpool", "gatorpool\gato
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gatorpool.tests", "gatorpool.tests\gatorpool.tests.csproj", "{3E854915-9A2A-4609-9203-688BFC59BBEF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{E9B2780B-69DA-4DFB-BF2C-E602BF7E743E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{2FC057CF-618A-4C37-A81E-9E908EB684F2}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{56A8AF5F-C082-4745-8EC9-CF3F09574D24}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\gatorpool.json = PublishScripts\Templates\gatorpool.json
+		PublishScripts\Templates\gatorpool.param.dev.json = PublishScripts\Templates\gatorpool.param.dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +37,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2FC057CF-618A-4C37-A81E-9E908EB684F2} = {E9B2780B-69DA-4DFB-BF2C-E602BF7E743E}
+		{56A8AF5F-C082-4745-8EC9-CF3F09574D24} = {E9B2780B-69DA-4DFB-BF2C-E602BF7E743E}
 	EndGlobalSection
 EndGlobal
